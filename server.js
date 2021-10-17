@@ -83,29 +83,29 @@ app.put('/api/students/:id', (req, res) => {
     });
 });
 
-app.delete('/api/students/:id', (req, res) => {
-    const id = req.params.id;
-    const objectId = ObjectId(id);
+// app.delete('/api/students/:id', (req, res) => {
+//     const id = req.params.id;
+//     const objectId = ObjectId(id);
 
-    console.log(id, objectId);
+//     console.log(id, objectId);
 
-    const myObj = { _id: objectId }
+//     const myObj = { _id: objectId }
 
-    MongoClient.connect(url, (err, db) => {
-        if (err) throw err;
+//     MongoClient.connect(url, (err, db) => {
+//         if (err) throw err;
 
-        const dbo = db.db("myDatabase");
-        dbo.collection("studentInfo").deleteOne(myObj, (error, result) => {
-            if (error) {
-                res.send("Error", error);
-                return;
-            }
-            if (result.deletedCount === 1)
-                res.send("Record deleted successfully");
-            db.close();
-        });
-    });
-});
+//         const dbo = db.db("myDatabase");
+//         dbo.collection("studentInfo").deleteOne(myObj, (error, result) => {
+//             if (error) {
+//                 res.send("Error", error);
+//                 return;
+//             }
+//             if (result.deletedCount === 1)
+//                 res.send("Record deleted successfully");
+//             db.close();
+//         });
+//     });
+// });
 
 app.get("/api/students/find", (req,res)=>{
 
