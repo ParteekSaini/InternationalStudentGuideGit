@@ -19,7 +19,8 @@ class HomePage extends Component {
         name:"",
         email:"",
         password:"",
-        repeatPassword:""
+        repeatPassword:"",
+        userDetails:[]
     };
     this.flipContent = this.flipContent.bind(this);
   }
@@ -33,30 +34,59 @@ class HomePage extends Component {
         { this.setState({ formState: true, signupform: "uuuuu", loginform: "/"}); }
     }
 
+    async componentDidMount(){
+        
+      const {data} =   await axios.get("/api/userSignUp");
+      //const {data} = await promise;
+      console.log(data);
+      this.setState({userDetails:data});
+    
+  
+}
+
     handleChange = (e) =>{
       let inputData= e.target.className;
-      if(inputData === 'name'){
+      if(inputData === "name"){
           this.setState ({ name: e.target.value});
       }
-      else if(inputData === 'email'){
+      else if(inputData === "email"){
           this.setState ({ email: e.target.value});
       }
-      else if(inputData === 'psw'){
+      else if(inputData === "psw"){
           this.setState({ password:e.target.value});
       }else{
         this.setState({ repeatPassword:e.target.value});
       }
   }
 
-  handleSubmit = async () => {
-    
-      const obj = { name: this.state.name, email: this.state.email, password: this.state.password };
-      const { data } = await axios.post('/api/userSignUp', obj);
-      const singleUserData = data.ops[0];
-      console.log(singleUserData);
-    
-    
+  handleSubmit = async (e) => {
+      e.preventDefault();
+     
+      var isDuplicateEmail = false;
+      this.state.userDetails.forEach(element => {
+            if(element.email===this.state.email){
+              isDuplicateEmail= true;
+            }
+      });
 
+      if(isDuplicateEmail==false){
+        if(this.state.password===this.state.repeatPassword){
+          const obj = { name: this.state.name, email: this.state.email, password: this.state.password };
+          const { data } = await axios.post('/api/userSignUp', obj);
+        }else{
+          alert("Please match your password")
+        }
+      }else{
+        alert("This email is already been registered");
+      }
+        
+      
+      
+      
+      
+      <a href="/login" ></a>
+    //  const  singleUserData = data.ops[0];
+    //   console.log(singleUserData);
 }
 
   render(){
@@ -127,7 +157,7 @@ class HomePage extends Component {
 
               <div class="clearfix">
               {/* <button type="button" class="cancelbtn">Cancel</button> */}
-              <button type="submit" class="signupbtn" onClick={this.handleSubmit}><b>Sign Up</b></button>
+              <button type="submit" class="signupbtn" onClick={(e)=>{this.handleSubmit(e)}}><b>Sign Up</b></button>
               {/* <div class="btnspace">&nbsp;</div> */}
                 {/* <button type="button" class="loginbtn">Log in</button> */}
               </div>

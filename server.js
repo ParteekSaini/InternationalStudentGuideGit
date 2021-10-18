@@ -18,6 +18,13 @@ const url = "mongodb://localhost:27017";
 
 app.get("/api/userSignUp", (req, res) => {
 
+    const name = req.body.name;
+    const email = req.body.email;
+    const password = req.body.password
+
+    //console.log(name, email, password);
+    const myObj = { name: name, email: email, password: password };
+
     MongoClient.connect(url , (err , db)=>{
         if(err) throw err;
 
@@ -41,6 +48,7 @@ app.post('/api/userSignUp', (req, res) => {
 
     console.log(name, email, password);
     const myObj = { name: name, email: email, password: password };
+    console.log(myObj.name);
 
     MongoClient.connect(url, (err, db) => {
         if (err) throw err;
