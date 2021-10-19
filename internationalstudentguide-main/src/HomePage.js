@@ -61,7 +61,6 @@ class HomePage extends Component {
 
   handleSubmit = async (e) => {
       e.preventDefault();
-     
       var isDuplicateEmail = false;
       this.state.userDetails.forEach(element => {
             if(element.email===this.state.email){

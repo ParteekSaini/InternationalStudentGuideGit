@@ -1,25 +1,22 @@
 import App from './App';
 import {ReactDOM} from 'react-dom'
-import CollegeCard from './components/CollegeCard';
-import universitieslist from "./universitieslist.json" 
+import provincelist from "./provinces.json"
 import { Container } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid'
 import Paper from '@material-ui/core/Paper'
+import ProvinceCard from './components/ProvinceCard';
 
 function college() {
   return (
     <Container>
         <Grid container>
-          {universitieslist.map(uni =>(
+          {provincelist.map(pro =>(
             <Grid>
-              <CollegeCard uni={uni}/> 
+              <ProvinceCard pro={pro}/> 
             </Grid>
           ))}
         </Grid>
     </Container>
-
-
-
   );
 }
 
