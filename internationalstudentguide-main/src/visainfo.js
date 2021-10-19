@@ -1,10 +1,11 @@
 import App from './App';
 
+
 function visaInfo() {
   return (
-    <div>
-      <h2>Page visainfo</h2>
-    </div>
+     <div>
+       <img alt="Example Alt" src="/assests/process.png" />
+     </div>
   );
 }
 
