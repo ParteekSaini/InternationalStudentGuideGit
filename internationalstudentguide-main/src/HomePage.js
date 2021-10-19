@@ -8,6 +8,7 @@ import axios from 'axios';
 // import { transitions, positions, Provider as AlertProvider } from 'react-alert';
 // import AlertTemplate from 'react-alert-template-basic';
 // Testings
+//Testing Commit in college page
 class HomePage extends Component {
 
   constructor(props) {
