@@ -8,6 +8,13 @@ import visaInfo from './visainfo';
 import socialHub from './socialhub';
 import Page5 from './page5';
 import logIn from './login';
+import BritishColumbia from './BritishColumbia';
+import Alberta from './Alberta';
+import Ontario from './Ontario';
+import Saskatchewan from './Saskatchewan';
+import Quebec from './Quebec';
+import Manitoba from './Manitoba';
+import NovaScotia from './NovaScotia';
 
 
 
@@ -15,7 +22,7 @@ class App extends Component {
   render() {
   return (
     <Router>
-      <div>
+      <div className="main_div">
         <ul className="headerUl">
           <li><a href="/">Home</a></li>
           <li><a href="/college">College</a></li>
@@ -33,6 +40,13 @@ class App extends Component {
           <Route path={"/visainfo"} component={visaInfo} />
           <Route path={"/socialhub"} component={socialHub} />
           <Route path={"/page5"} component={Page5} />
+          <Route path={"/BritishColumbia"} component={BritishColumbia} />
+          <Route path={"/Alberta"} component={Alberta} />
+          <Route path={"/Ontario"} component={Ontario} />
+          <Route path={"/Saskatchewan"} component={Saskatchewan} />
+          <Route path={"/Quebec"} component={Quebec} />
+          <Route path={"/Manitoba"} component={Manitoba} />
+          <Route path={"/NovaScotia"} component={NovaScotia} />
           <Route path={"/login"} component={logIn} />
         </Switch>
 

@@ -1,7 +1,7 @@
-[{"id":1,"country":"Canada","province":"British Columbia"},
-{"id":2,"country":"Canada","province":"Alberta"},
-{"id":3,"country":"Canada","province":"Nova Scotia"},
-{"id":4,"country":"Canada","province":"Ontario"},
-{"id":5,"country":"Canada","province":"Saskatchewan"},
-{"id":6,"country":"Canada","province":"Québec"},
-{"id":7,"country":"Canada","province":"Manitoba"}]
+[{"id":1,"country":"Canada","province":"British Columbia","image":"./images/BritishColumbia.jpg","linkpage":"/BritishColumbia"},
+{"id":2,"country":"Canada","province":"Alberta","image":"./images/Alberta.jpg","linkpage":"Alberta"},
+{"id":3,"country":"Canada","province":"Ontario","image":"./images/Ontario-13.jpg","linkpage":"Ontario"},
+{"id":4,"country":"Canada","province":"Saskatchewan","image":"./images/saskatchewan.jpg","linkpage":"Saskatchewan"},
+{"id":5,"country":"Canada","province":"Québec","image":"./images/Quebec.jpg","linkpage":"Quebec"},
+{"id":6,"country":"Canada","province":"Manitoba","image":"./images/Manitoba.jpg","linkpage":"Manitoba"},
+{"id":7,"country":"Canada","province":"Nova Scotia","image":"./images/nova-scotia.jpg","linkpage":"NovaScotia"}]

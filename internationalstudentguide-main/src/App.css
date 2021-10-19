@@ -1,5 +1,17 @@
+html{
+  width: 1260px;
+  margin: auto;
+  /* background-image: url('images/college.jpg'); */
+  /* background-size: cover; */
+  background-color: rgb(248, 248, 248);
+}
+
 .App {
   text-align: center;
+}
+
+.main_div{
+  background-color: rgb(248, 248, 248);
 }
 
 .App-logo {
@@ -153,3 +165,50 @@ button:hover {
     width: 100%;
   }
 }
+
+.provinceImage {
+  width: 350px;
+  height: 234px;
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
+
+.provinceImage img{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: block;
+  object-fit: contain;
+  filter:drop-shadow(8px 8px 10px gray);
+  -webkit-filter:drop-shadow(8px 8px 10px gray);
+}
+
+.provinceImage:hover img{
+  filter:contrast(150%);
+  -webkit-filter:contrast(150%);
+  transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -o-transform: scale(1.08);
+}
+
+.college_div{
+  margin: auto;
+  width: 92%; 
+}
+
+.college_list{
+  text-align: center;
+  font-size: 30px;
+}
+
+.college_list a{
+  color: rgb(27, 27, 27);
+}
+
+.provinceImage:hover a{
+  font-size: 35px;
+}
+
