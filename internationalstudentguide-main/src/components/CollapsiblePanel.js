@@ -45,7 +45,7 @@ function CollapsiblePanel({ children, ...props }) {
 }
 
 CollapsiblePanel.defaultProps = {
-  children: "Add node as a child",
+  children: "Add a course",
   title: "Collapsible Panel",
   collapse: true
 };

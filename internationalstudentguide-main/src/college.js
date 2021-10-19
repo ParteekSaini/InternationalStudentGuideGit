@@ -1,7 +1,7 @@
 import App from './App';
 import './App.css';
-import {ReactDOM} from 'react-dom'
-import provincelist from "./provinces.json"
+import {ReactDOM} from 'react-dom';
+import provincelist from "./provinces.json";
 import { Container } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid'
 import Paper from '@material-ui/core/Paper'

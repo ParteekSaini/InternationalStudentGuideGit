@@ -1,0 +1,31 @@
+[
+   
+
+    {"cid":1,
+        "cname":"Douglas College",
+        "courses":[
+            {"courseid":"bccourse1","coursename":"DU CSIS","coursedetails":[
+                {"coursedetailsid":"coursedetails1","cursereq":"Pre req 1","fees":"$300"}
+            ]},
+            {"courseid":"bccourse2","coursename":"DU CSIS 2","coursedetails":[
+                {"coursedetailsid":"coursedetails2","cursereq":"Pre req 2","fees":"$500"}
+            ]},
+            {"courseid":"bccourse3","coursename":"DU CSIS 3","coursedetails":[
+                {"coursedetailsid":"coursedetails3","cursereq":"Pre req 3","fees":"$800"}
+            ]}
+    ]},
+    {"cid":2,
+        "cname":"Simon Fraser University",
+        "courses":[
+            {"courseid":"bccourse1","coursename":"SFU CSIS","coursedetails":[
+                {"coursedetailsid":"coursedetails1","cursereq":"Pre req 11","fees":"$3000"}
+            ]},
+            {"courseid":"bccourse2","coursename":"SFU CSIS 2","coursedetails":[
+                {"coursedetailsid":"coursedetails2","cursereq":"Pre req 12","fees":"$5000"}
+            ]},
+            {"courseid":"bccourse3","coursename":"SFU CSIS 3","coursedetails":[
+                {"coursedetailsid":"coursedetails3","cursereq":"Pre req 13","fees":"$8000"}
+            ]}
+    ]}
+    
+]

@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import App from './App';
 import CollapsiblePanel from './components/CollapsiblePanel';
-// import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap/dist/css/bootstrap.css';
+import BCCollegesData from './BCCollegesData.json';
+import provincelist from './provinces.json';
+import { Container } from '@material-ui/core';
+import Grid from '@material-ui/core/Grid'
 
 
 function BritishColumbia() {
@@ -33,21 +36,26 @@ function BritishColumbia() {
           >
               <i className={icon} /> {title}
           </button>
-          <CollapsiblePanel title="Title 1" collapse={collapse}>
-              <span>{text}</span>
-          </CollapsiblePanel>
-          <CollapsiblePanel title="Title 2" collapse={collapse}>
-              <span>{text}</span>
-          </CollapsiblePanel>
-          <CollapsiblePanel title="Title 3" collapse={collapse}>
-              <span>{text}</span>
-          </CollapsiblePanel>
-          <CollapsiblePanel title="Title 4" collapse={collapse}>
-              <span>{text}</span>
-          </CollapsiblePanel>
-          <CollapsiblePanel title="Title 5" collapse={collapse}>
-              <span>{text}</span>
-          </CollapsiblePanel>
+          
+          {BCCollegesData.map((clg, index) => (
+            <div key={index}>
+                <CollapsiblePanel title={clg.cname} collapse={collapse}>
+                  {clg.courses.map((c, i) => (
+                    <div key={i}>
+                      <CollapsiblePanel title={c.coursename} collapse={collapse}>
+                        {c.coursedetails.map((cd, id) => (
+                          <div key={id}>
+                            {cd.cursereq}
+                            <br />
+                            {cd.fees}
+                          </div>
+                        ) )}
+                      </CollapsiblePanel>
+                    </div>
+                  ))}
+                </CollapsiblePanel>
+            </div>
+          ))}
       </div>
   );
 }

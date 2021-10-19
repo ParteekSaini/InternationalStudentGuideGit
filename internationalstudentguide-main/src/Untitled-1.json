@@ -1,0 +1,57 @@
+,
+    {"cid":3,
+        "cname":"The University of British Columbia(UBC)",
+        "courses":[
+            {"courseid":"bccourse1","coursename":"CSIS"},
+            {"courseid":"bccourse2","coursename":"CSIS 2"},
+            {"courseid":"bccourse3","coursename":"CSIS 3"}
+    ]},
+    {"cid":4,
+        "cname":"University of Victoria",
+        "courses":[
+            {"courseid":"bccourse1","coursename":"CSIS"},
+            {"courseid":"bccourse2","coursename":"CSIS 2"},
+            {"courseid":"bccourse3","coursename":"CSIS 3"}
+    ]},
+    {"cid":5,
+        "cname":"Kwantleen University College",
+        "courses":[
+            {"courseid":"bccourse1","coursename":"CSIS"},
+            {"courseid":"bccourse2","coursename":"CSIS 2"},
+            {"courseid":"bccourse3","coursename":"CSIS 3"}
+    ]},
+    {"cid":6,
+        "cname":"Langara College",
+        "courses":[
+            {"courseid":"bccourse1","coursename":"CSIS"},
+            {"courseid":"bccourse2","coursename":"CSIS 2"},
+            {"courseid":"bccourse3","coursename":"CSIS 3"}
+    ]},
+    {"cid":7,
+        "cname":"Capilano University",
+        "courses":[
+            {"courseid":"bccourse1","coursename":"CSIS"},
+            {"courseid":"bccourse2","coursename":"CSIS 2"},
+            {"courseid":"bccourse3","coursename":"CSIS 3"}
+    ]},
+    {"cid":8,
+        "cname":"Thompson Rivers University",
+        "courses":[
+        {"courseid":"bccourse1","coursename":"CSIS"},
+        {"courseid":"bccourse2","coursename":"CSIS 2"},
+        {"courseid":"bccourse3","coursename":"CSIS 3"}
+    ]},
+    {"cid":9,
+        "cname":"British Columbia Institute of Technology(BCIT)",
+        "courses":[
+            {"courseid":"bccourse1","coursename":"CSIS"},
+            {"courseid":"bccourse2","coursename":"CSIS 2"},
+            {"courseid":"bccourse3","coursename":"CSIS 3"}
+    ]},
+    {"cid":10,
+        "cname":"University of the Fraser Valley",
+        "courses":[
+        {"courseid":"bccourse1","coursename":"CSIS"},
+        {"courseid":"bccourse2","coursename":"CSIS 2"},
+        {"courseid":"bccourse3","coursename":"CSIS 3"}
+    ]}
