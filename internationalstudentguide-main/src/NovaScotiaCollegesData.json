@@ -1,0 +1,299 @@
+[
+    {"cid":1,
+        "cname":"Dalhousie University",
+        "courses":[
+            {"courseid":"bccourse1","coursename":"Actuarial Science","coursedetails":[
+                {"coursedetailsid":"coursedetails1",
+                    "programlength":"Length of Program: 2 years",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $25,000-$35,000",
+                    "credential":"Credential : Diploma"}
+            ]},
+            {"courseid":"bccourse2","coursename":"Agricultural Business","coursedetails":[
+                {"coursedetailsid":"coursedetails2",
+                    "programlength":"Length of Program: 2 years",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $25,000-$35,000",
+                    "credential":"Credential : Diploma"}
+            ]},
+            {"courseid":"bccourse3","coursename":"Agricultural Economics","coursedetails":[
+                {"coursedetailsid":"coursedetails3",
+                    "programlength":"Length of Program: 2 years",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $25,000-$35,000",
+                    "credential":"Credential : Diploma"}
+            ]},
+            {"courseid":"bccourse4","coursename":"Economics (Associate of Arts)","coursedetails":[
+                {"coursedetailsid":"coursedetails4",
+		"programlength":"Length of Program: 2 years",
+		"admission":"Admission Requirements: Secondary School Graduation",
+		"fees":"Approximate Tuition Fees: $32,000-$35,000",
+		"credential":"Credential : Associate Degree"}
+            ]},
+            {"courseid":"bccourse5","coursename":"Nursing (Bachelor of Science)","coursedetails":[
+                {"coursedetailsid":"coursedetails5",
+		"programlength":"Length of Program: 4 years",
+		"admission":"Admission Requirements: Secondary School Graduation",
+		"fees":"Approximate Tuition Fees: $80,000-$85,000",
+		"credential":"Credential : Bachelor's Degree"}
+            ]},
+            {"courseid":"bccourse6","coursename":"Business Management (Diploma)","coursedetails":[
+                {"coursedetailsid":"coursedetails6",
+		"programlength":"Length of Program: 1 years",
+		"admission":"Admission Requirements: Undergraduate Degree (Bachelor level)",
+		"fees":"Approximate Tuition Fees: $15,000-$20,000",
+		"credential":"Credential : Post-Degree Diploma"}
+            ]},
+            {"courseid":"bccourse7","coursename":"Civil Engineering","coursedetails":[
+                {"coursedetailsid":"coursedetails7",
+                    "programlength":"Length of Program: 4 years",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $80,000-$85,000",
+                    "credential":"Credential : Bachelor's Degree"}
+            ]},
+            {"courseid":"bccourse8","coursename":"Electrical Engineering","coursedetails":[
+                {"coursedetailsid":"coursedetails8",
+                    "programlength":"Length of Program: 4 years",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $80,000-$85,000",
+                    "credential":"Credential : Bachelor's Degree"}
+            ]}
+
+
+    ]},
+    {"cid":2,
+        "cname":"Saint Mary's University",
+        "courses":[
+            {"courseid":"bccourse1","coursename":"Computer Engineering","coursedetails":[
+                {"coursedetailsid":"coursedetails1",
+		"programlength":"Length of Program: 2 Years",
+		"admission":"Admission Requirements:  Secondary School Graduation",
+		"fees":"Approximate Tuition Fees: $35,000-$40,000",
+		"credential":"Credential : Minor in Computer Engineering"}
+            ]},
+            {"courseid":"bccourse2","coursename":"Mathematics","coursedetails":[
+                {"coursedetailsid":"coursedetails2",
+		"programlength":"Length of Program: 2 year",
+		"admission":"Admission Requirements: Secondary School Graduation",
+		"fees":"Approximate Tuition Fees: $55,000-$60,000",
+		"credential":"Credential : Diploma"}
+            ]},
+            {"courseid":"bccourse3","coursename":"Computing Science Dual Degree","coursedetails":[
+                {"coursedetailsid":"coursedetails3",
+		"programlength":"Length of Program: 3 years",
+		"admission":"Admission Requirements: Secondary School Graduation",
+		"fees":"Approximate Tuition Fees: $80,000-$85,000",
+		"credential":"Credential : MSc"}
+            ]},
+            {"courseid":"bccourse4","coursename":"Global Business Management","coursedetails":[
+                {"coursedetailsid":"coursedetails4",
+                    "programlength":"Length of Program: 2 year",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $55,000-$60,000",
+                    "credential":"Credential : Diploma"}
+            ]},
+            {"courseid":"bccourse5","coursename":"Master of Science in Professional Computer Science ","coursedetails":[
+                {"coursedetailsid":"coursedetails5",
+		"programlength":"Length of Program: 2 years",
+		"admission":"Admission Requirements: Undergraduate Degree",
+		"fees":"Approximate Tuition Fees: $80,000-$85,000",
+		"credential":"Credential : MSc"}
+            ]},
+            {"courseid":"bccourse6","coursename":"Computing Science and Business Administration","coursedetails":[
+                {"coursedetailsid":"coursedetails6",
+                    "programlength":"Length of Program: 2 year",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $55,000-$60,000",
+                    "credential":"Credential : Diploma"}
+            ]},
+            {"courseid":"bccourse7","coursename":"Business Administration","coursedetails":[
+                {"coursedetailsid":"coursedetails7",
+		"programlength":"Length of Program: 3 years",
+		"admission":"Admission Requirements: Undergraduate Degree",
+		"fees":"Approximate Tuition Fees: $75,000-$80,000",
+		"credential":"Credential : MBA"}
+            ]},
+            {"courseid":"bccourse8","coursename":"Anthropology","coursedetails":[
+                {"coursedetailsid":"coursedetails8",
+                    "programlength":"Length of Program: 2 year",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $55,000-$60,000",
+                    "credential":"Credential : Diploma"}
+            ]}
+    ]}
+    ,
+    {"cid":3,
+        "cname":"Acadia University",
+        "courses":[
+            {"courseid":"bccourse1","coursename":"Chemistry (BSc)","coursedetails":[
+                {"coursedetailsid":"coursedetails1",
+                    "programlength":"Length of Program: 4 years",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $80,000-$85,000",
+                    "credential":"Credential : Bachelor's Degree"}
+            ]},
+            {"courseid":"bccourse2","coursename":"Classical Studies (BA)","coursedetails":[
+                {"coursedetailsid":"coursedetails2",
+                    "programlength":"Length of Program: 4 years",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $80,000-$85,000",
+                    "credential":"Credential : Bachelor's Degree"}
+            ]},
+            {"courseid":"bccourse3","coursename":"Computer Science (BCS, BACS, BSc)","coursedetails":[
+                {"coursedetailsid":"coursedetails3",
+                    "programlength":"Length of Program: 4 years",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $80,000-$85,000",
+                    "credential":"Credential : Bachelor's Degree"}
+            ]},
+            {"courseid":"bccourse4","coursename":"Environmental and Sustainability Studies (BA, BCD)","coursedetails":[
+                {"coursedetailsid":"coursedetails4",
+                    "programlength":"Length of Program: 4 years",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $80,000-$85,000",
+                    "credential":"Credential : Bachelor's Degree"}
+            ]},
+            {"courseid":"bccourse5","coursename":"Mathematics and Statistics (BSc, BA)","coursedetails":[
+                {"coursedetailsid":"coursedetails5",
+                    "programlength":"Length of Program: 4 years",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $80,000-$85,000",
+                    "credential":"Credential : Bachelor's Degree"}
+            ]},
+            {"courseid":"bccourse6","coursename":"Nutrition and Dietetics (BSN)","coursedetails":[
+                {"coursedetailsid":"coursedetails6",
+                    "programlength":"Length of Program: 2 years",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $25,000-$35,000",
+                    "credential":"Credential : Diploma"}
+            ]},
+            {"courseid":"bccourse7","coursename":"Psychology (BSc, BA)","coursedetails":[
+                {"coursedetailsid":"coursedetails7",
+                    "programlength":"Length of Program: 2 years",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $25,000-$35,000",
+                    "credential":"Credential : Diploma"}
+            ]}
+    ]},
+    {"cid":4,
+        "cname":"St. Francis Xavier University",
+        "courses":[
+            {"courseid":"bccourse1","coursename":"BACHELOR OF EDUCATION (B.ED.)","coursedetails":[
+                {"coursedetailsid":"coursedetails1",
+		"programlength":"Length of Program: 4 Years",
+		"admission":"Admission Requirements:   Secondary School Graduation",
+		"fees":"Approximate Tuition Fees: $60,000-$65,000",
+		"credential":"Credential : Bachelor's Degree"}
+            ]},
+            {"courseid":"bccourse2","coursename":"Computer Engineering","coursedetails":[
+                {"coursedetailsid":"coursedetails2",
+            "programlength":"Length of Program: 4 Years",
+            "admission":"Admission Requirements:   Secondary School Graduation",
+            "fees":"Approximate Tuition Fees: $62,000-$65,000",
+            "credential":"Credential : Bachelor's Degree"}
+            ]},
+            {"courseid":"bccourse3","coursename":"Mechanical Engineering","coursedetails":[
+                {"coursedetailsid":"coursedetails3",
+                    "programlength":"Length of Program: 4 Years",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $64,000-$68,000",
+                    "credential":"Credential : Bachelor's Degree"}
+            ]},
+            {"courseid":"bccourse4","coursename":"MASTERS OF EDUCATION & PHD IN EDUCATION","coursedetails":[
+                {"coursedetailsid":"coursedetails4",
+                    "programlength":"Length of Program: 2 years or 1 year (accelerated)",
+                    "admission":"Admission Requirements: Bachelor's Degree",
+                    "fees":"Approximate Tuition Fees: $50,000-$55,000",
+                    "credential":"Credential : Master's"}
+            ]},
+            {"courseid":"bccourse5","coursename":"Intercultural Education","coursedetails":[
+                {"coursedetailsid":"coursedetails5",
+                    "programlength":"Length of Program: 2 years",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $25,000-$30,000",
+                    "credential":"Credential : Diploma"}
+            ]},
+            {"courseid":"bccourse6","coursename":"BIOLOGY","coursedetails":[
+                {"coursedetailsid":"coursedetails6",
+                    "programlength":"Length of Program: 1 year",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $20,000-$25,000",
+                    "credential":"Credential : Certificate"}
+            ]},
+            {"courseid":"bccourse7","coursename":"Art History","coursedetails":[
+                {"coursedetailsid":"coursedetails7",
+                    "programlength":"Length of Program: 4 Years",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $70,000-$75,000",
+                    "credential":"Credential : Bachelor's Degree"}
+            ]},
+            {"courseid":"bccourse8","coursename":"Chemistry","coursedetails":[
+                {"coursedetailsid":"coursedetails8",
+                    "programlength":"Length of Program: 4 Years",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $75,000-$80,000",
+                    "credential":"Credential : Bachelor's Degree"}
+            ]}
+    ]}
+    ,
+    {"cid":5,
+        "cname":"Mount Saint Vincent University",
+        "courses":[
+            {"courseid":"bccourse1","coursename":"English","coursedetails":[
+                {"coursedetailsid":"coursedetails1",
+                    "programlength":"Length of Program: 4 Years",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $75,000-$80,000",
+                    "credential":"Credential : Bachelor's Degree"}
+            ]},
+            {"courseid":"bccourse2","coursename":"Canadian Studies","coursedetails":[
+                {"coursedetailsid":"coursedetails2",
+                    "programlength":"Length of Program: 1 Years",
+                    "admission":"Admission Requirements:   Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $17,000-$22,000",
+                    "credential":"Credential : Certificate"}
+            ]},
+            {"courseid":"bccourse3","coursename":"Mathematics","coursedetails":[
+                {"coursedetailsid":"coursedetails3",
+                    "programlength":"Length of Program: 4 Years",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $75,000-$80,000",
+                    "credential":"Credential : Bachelor's Degree"}
+            ]},
+            {"courseid":"bccourse4","coursename":"Philosophy","coursedetails":[
+                {"coursedetailsid":"coursedetails4",
+		"programlength":"Length of Program: 4 years",
+		"admission":"Admission Requirements: Secondary School Graduation",
+		"fees":"Approximate Tuition Fees: $70,000-$75,000",
+		"credential":"Credential : Bachelor's Degre"}
+            ]},
+            {"courseid":"bccourse5","coursename":"Political Studies","coursedetails":[
+                {"coursedetailsid":"coursedetails5",
+                    "programlength":"Length of Program: 2 years",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $45,000-$50,000",
+                    "credential":"Credential : Diploma"}
+            ]},
+            {"courseid":"bccourse6","coursename":"Applied Human Nutrition","coursedetails":[
+                {"coursedetailsid":"coursedetails6",
+                    "programlength":"Length of Program: 2 year",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $40,000-$45,000",
+                    "credential":"Credential : Diploma"}
+            ]},
+            {"courseid":"bccourse7","coursename":"Business Administration","coursedetails":[
+                {"coursedetailsid":"coursedetails7",
+                    "programlength":"Length of Program: 1 Years",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $17,000-$20,000",
+                    "credential":"Credential : Certificate"}
+            ]},
+            {"courseid":"bccourse8","coursename":"Major in Biology","coursedetails":[
+                {"coursedetailsid":"coursedetails8",
+                    "programlength":"Length of Program: 4 Years",
+                    "admission":"Admission Requirements: Secondary School Graduation",
+                    "fees":"Approximate Tuition Fees: $75,000-$80,000",
+                    "credential":"Credential : Bachelor's Degree"}
+            ]}
+    ]}
+]
