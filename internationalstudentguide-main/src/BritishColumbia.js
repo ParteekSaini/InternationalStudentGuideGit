@@ -45,9 +45,13 @@ function BritishColumbia() {
                       <CollapsiblePanel title={c.coursename} collapse={collapse}>
                         {c.coursedetails.map((cd, id) => (
                           <div key={id}>
-                            {cd.cursereq}
+                            {cd.programlength}
+                            <br />
+                            {cd.admission}
                             <br />
                             {cd.fees}
+                            <br/>
+                            {cd.credential}
                           </div>
                         ) )}
                       </CollapsiblePanel>
