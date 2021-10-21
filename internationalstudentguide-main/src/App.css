@@ -212,3 +212,7 @@ button:hover {
   font-size: 35px;
 }
 
+img {
+  width: -webkit-fill-available;
+  height: 600px;
+}

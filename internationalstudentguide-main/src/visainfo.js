@@ -4,7 +4,7 @@ import App from './App';
 function visaInfo() {
   return (
      <div>
-       <img alt="Example Alt" src="/assests/process.png" />
+       <img alt="process" src="/assests/process.png" />
      </div>
   );
 }
