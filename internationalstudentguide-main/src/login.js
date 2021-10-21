@@ -2,11 +2,11 @@ import App from './App';
 
 function logIn() {
   return (
-    <div>
-      {/* <h2>Welcome Back!</h2> */}
-      <h2> &nbsp; Welcome to International Student Guide!</h2>
+    <div className="main_div">
+      
 
       <div className="leftcontainer">
+      <h2>  Welcome to International Student Guide!</h2>
           <h4>Planning to study in Canada and don't know the process &#x1F622;</h4>
           <p>Don't worry! We got all the information you need to know 	&#128512;</p>
           <h3>Sign up and learn the process &rarr;</h3>

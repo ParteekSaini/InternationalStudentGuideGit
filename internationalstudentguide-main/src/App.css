@@ -90,6 +90,8 @@ footer {
 
 .containerForm{
   border:1px solid #ccc;
+  width:38%;
+  float: right;
 }
 
 
@@ -134,7 +136,7 @@ button:hover {
 
 .signupbtn, .loginbtn {
   float: left;
-  width: 25%;
+  width: 100%;
 }
 
 .btnspace{
@@ -147,9 +149,7 @@ button:hover {
   float: left;
 }
 .container {
-  padding: 16px;
-  width: 30%;
-  float: right;
+  padding: 6px;
 }
 
 /* Clear floats */
@@ -157,13 +157,6 @@ button:hover {
   content: "";
   clear: both;
   display: table;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .signupbtn, .loginbtn {
-    width: 100%;
-  }
 }
 
 .provinceImage {
@@ -212,7 +205,3 @@ button:hover {
   font-size: 35px;
 }
 
-img {
-  width: -webkit-fill-available;
-  height: 600px;
-}

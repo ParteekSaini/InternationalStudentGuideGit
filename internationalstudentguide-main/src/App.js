@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router,Redirect, Switch, Route, Link } from "react-router-dom";
 import HomePage from './HomePage';
 import college from './college';
-import VisaInfo from './Visainfo';
+import visaInfo from './Visainfo';
 import socialHub from './socialhub';
 import Page5 from './page5';
 import logIn from './login';
@@ -15,7 +15,7 @@ import Saskatchewan from './Saskatchewan';
 import Quebec from './Quebec';
 import Manitoba from './Manitoba';
 import NovaScotia from './NovaScotia';
-
+import postAd from './postAd';
 
 
 class App extends Component {
@@ -26,7 +26,7 @@ class App extends Component {
         <ul className="headerUl">
           <li><a href="/">Home</a></li>
           <li><a href="/college">College</a></li>
-          <li><a href="/Visainfo">Visa Info</a></li>
+          <li><a href="/visainfo">Visa Info</a></li>
           <li><a href="/socialhub">Social Hub</a></li>
           {/* <li><a href="/page5">Page 5</a></li> */}
         </ul>
@@ -37,7 +37,7 @@ class App extends Component {
           {/* <Route exact path="/"><Home /></Route> */}
           <Route exact path={"/"} component={HomePage} />
           <Route path={"/college"} component={college} />
-          <Route path={"/Visainfo"} component={VisaInfo} />
+          <Route path={"/visainfo"} component={visaInfo} />
           <Route path={"/socialhub"} component={socialHub} />
           <Route path={"/page5"} component={Page5} />
           <Route path={"/BritishColumbia"} component={BritishColumbia} />
@@ -48,6 +48,7 @@ class App extends Component {
           <Route path={"/Manitoba"} component={Manitoba} />
           <Route path={"/NovaScotia"} component={NovaScotia} />
           <Route path={"/login"} component={logIn} />
+          <Route path={"/postAd"} component={postAd} />
         </Switch>
 
         <footer>

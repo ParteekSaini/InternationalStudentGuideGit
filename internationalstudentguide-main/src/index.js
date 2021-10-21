@@ -6,7 +6,7 @@ import './App.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Redirect, Switch, Route, Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
-
+import 'react-bootstrap';
 
 const routes = (
   <BrowserRouter>

@@ -92,10 +92,8 @@ class HomePage extends Component {
     return (
       
       <div className="main_div">
-      
-        <h2> &nbsp; Welcome to International Student Guide!</h2>
-
           <div className="leftcontainer">
+          <h2> Welcome to International Student Guide!</h2>
             <h4>Planning to study in Canada and don't know the process &#x1F622;</h4>
             <p>Don't worry! We got all the information you need to know 	&#128512;</p>
             <h3>Sign up and learn the process &rarr;</h3>
@@ -112,19 +110,6 @@ class HomePage extends Component {
           </div>
           <form className="containerForm"/* action="signup.php" */ >
             <div className="container">
-            {/* <Router>
-              <div>
-                <ul className="">
-                  <li><a href="/">Sign Up</a></li>
-                  <li><a href="/">Login</a></li>
-                </ul>
-                  <hr />
-                <Switch>
-                  <Route exact path={"/"} component={signUp} />
-                  <Route exact path={this.state.signupform} component={logIn} />
-                </Switch>
-              </div>
-            </Router> */}
               <h1>Sign Up</h1>
               <p>Sign Up for Free and let us help you!</p>
               {/* <hr> */}
@@ -150,9 +135,10 @@ class HomePage extends Component {
                 {/* <button type="button" class="loginbtn">Log in</button> */}
               </div>
               <p>Already have an account? <a href="/login" >Login Here!</a></p>
-              <p>Already have an account? <a href="/login" >Login Here!</a></p>
             </div>
           </form>
+          <br /> <br />
+          
       
       </div>
       
