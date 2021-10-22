@@ -214,7 +214,7 @@ button:hover {
   font-size: 35px;
 }
 
-img {
+#visaInfoImage {
   width: -webkit-fill-available;
   height: 600px;
 }

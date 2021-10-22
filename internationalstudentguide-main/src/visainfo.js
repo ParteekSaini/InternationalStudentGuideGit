@@ -23,7 +23,7 @@ function VisaInfo() {
   };
   return (
      <div lassName="App container my-2">
-       <img alt="process" src="/assests/process.png" />
+       <img id="visaInfoImage" alt="process" src="/assests/process.png" />
        <button
               type="button"
               className="btn-warning mt-4 mb-3 float-left"
