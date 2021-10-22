@@ -2,7 +2,7 @@ import App from './App';
 import { Card, Button, CardImg, CardTitle, CardText, CardDeck, CardSubtitle, CardBody, Row, Col } from 'reactstrap';
 
 
-function socialHub() {
+function socialhub() {
   return (
     <div>
       <h2>Social Hub</h2>
@@ -66,4 +66,4 @@ function socialHub() {
   );
 }
 
-export default socialHub;
+export default socialhub;

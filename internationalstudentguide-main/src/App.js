@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router,Redirect, Switch, Route, Link } from "react-router-dom";
 import HomePage from './HomePage';
 import college from './college';
-import visaInfo from './Visainfo';
+import VisaInfo from './visainfo';
 import socialHub from './socialhub';
 import Page5 from './page5';
 import logIn from './login';
@@ -37,7 +37,7 @@ class App extends Component {
           {/* <Route exact path="/"><Home /></Route> */}
           <Route exact path={"/"} component={HomePage} />
           <Route path={"/college"} component={college} />
-          <Route path={"/visainfo"} component={visaInfo} />
+          <Route path={"/visainfo"} component={VisaInfo} />
           <Route path={"/socialhub"} component={socialHub} />
           <Route path={"/page5"} component={Page5} />
           <Route path={"/BritishColumbia"} component={BritishColumbia} />
