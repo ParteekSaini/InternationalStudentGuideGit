@@ -1,16 +1,17 @@
 // import App from './App';
+import React from 'react';
 import { Col, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
 function postAd() {
   return (
-    <div>
-      <h2>Post your Ad!</h2>
-      <div> &nbsp;</div>
+    
+      
 
       <Form /* action="signup.php" */ >
-        
+        <h2>Post your Ad!</h2>
+      <div> &nbsp;</div>
         <FormGroup row>
-            <Label for="title" sm={2}>Title</Label>
+            <Label for="title" sm={2}>Title*</Label>
             <Col sm={10}>
                 <Input type="text" name="title" id="title" placeholder="Enter Title of your ad!" required />
             </Col>
@@ -24,25 +25,37 @@ function postAd() {
         </FormGroup>
 
         <FormGroup row>
-            <Label for="description" sm={2}>Description</Label>
+            <Label for="description" sm={2}>Description*</Label>
             <Col sm={10}>
-                <Input type="textarea" name="description" id="description" placeholder="Enter description of your ad!" required />
+                <Input type="text" name="description" id="description" placeholder="Enter description of your ad!" required />
             </Col>
         </FormGroup>
 
         <FormGroup row>
-            <Label for="email" sm={2}>Email</Label>
+            <Label for="email" sm={2}>Email*</Label>
             <Col sm={10}>
-                <Input type="email" name="email" id="email" placeholder="Enter your email to contact" />
+                <Input type="text" name="email" id="email" placeholder="Enter your email" required />
             </Col>
         </FormGroup>
 
         <FormGroup row>
-            <Label for="email" sm={2}>Phone Number</Label>
+            <Label for="email" sm={2}>Phone Number*</Label>
             <Col sm={10}>
-                <Input type="phone" name="phone" id="phone" placeholder="Enter your phone number to contact" />
+                <Input type="text" name="phone" id="phone" placeholder="Enter your phone number" required />
             </Col>
         </FormGroup>
+
+        <FormGroup row>
+            <Label for="exampleFile" sm={2}>File</Label>
+            <Col sm={10}>
+                <Input type="file" name="file" id="exampleFile" />
+                <FormText color="muted">
+                    {/* This is some placeholder block-level help text for the above input. */}
+                    {/* It's a bit lighter and easily wraps to a new line. */}
+                </FormText>
+            </Col>
+        </FormGroup>
+        <br />
 
         <Button type="submit" ><b>Post</b></Button>
         
@@ -52,7 +65,7 @@ function postAd() {
             
             
           </Form>
-    </div>
+    
   );
 }
 

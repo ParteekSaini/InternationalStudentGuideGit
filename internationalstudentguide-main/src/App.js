@@ -20,17 +20,6 @@ import Contact from './Contact';
 
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      headerLinks: [
-        { title: ' Contact', path: '/contact' }
-      ],
-      contact: {
-        title: 'Lets Connect'
-      }
-    }
-  }
   render() {
   return (
     <Router>
@@ -40,7 +29,10 @@ class App extends Component {
           <li><a href="/college">College</a></li>
           <li><a href="/visainfo">Visa Info</a></li>
           <li><a href="/socialhub">Social Hub</a></li>
+          <li style={{float:"right",backgroundColor:"grey"}}><a href="/login">LogIn</a></li>
+          <li style={{float:"right",backgroundColor:"grey"}}><a href="/">SignUp</a></li>
           <li><a href="/Contact">Contact Us</a></li>
+          {/* <li><a href="/page5">Page 5</a></li> */}
         </ul>
 
         <hr />
@@ -61,7 +53,7 @@ class App extends Component {
           <Route path={"/NovaScotia"} component={NovaScotia} />
           <Route path={"/login"} component={logIn} />
           <Route path={"/postAd"} component={postAd} />
-          <Route path={"/contact"} exact render={() => <Contact title={this.state.contact.title} />} />
+	        <Route path={"/contact"} component={Contact} />
         </Switch>
 
         <footer>
@@ -72,6 +64,14 @@ class App extends Component {
   );
   }
 }
+
+// function Home() {
+//   return (
+//     <div>
+//       <h2>Home</h2>
+//     </div>
+//   );
+// }
 
 
 export default App;
