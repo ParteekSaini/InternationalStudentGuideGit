@@ -2,16 +2,16 @@
     {"cid":1,
         "cname":"Douglas College",
         "courses":[
-            {"courseid":"bccourse1","coursename":"Computing Studies & Information Systems(CSIS)","coursedetails":[
+            {"courseid":"bccourse1","coursename":"Computing Studies & Information Systems(CSIS)- Emerging Technologies","coursedetails":[
                 {"coursedetailsid":"coursedetails1",
 		"programlength":"Length of Program: 2 Years",
 		"admission":"Admission Requirements: Undergraduate Degree",
 		"fees":"Approximate Tuition Fees: $35,000-$40,000",
 		"credential":"Credential : Post-Baccalaureate Diploma"}
             ]},
-            {"courseid":"bccourse2","coursename":"Computing Studies & Information Systems","coursedetails":[
+            {"courseid":"bccourse2","coursename":"Computing Studies & Information Systems(CSIS)- Data Analytics","coursedetails":[
                 {"coursedetailsid":"coursedetails2",
-		"programlength":"Length of Program: 1 year",
+		"programlength":"Length of Program: 2 year",
 		"admission":"Admission Requirements: Undergraduate Degree",
 		"fees":"Approximate Tuition Fees: $35,000-$40,000",
 		"credential":"Credential : Post-Degree Diploma"}
