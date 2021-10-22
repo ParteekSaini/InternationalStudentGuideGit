@@ -16,30 +16,23 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const url = "mongodb://localhost:27017";
 
-app.get("/api/userSignUp", (req, res) => {
+app.get("/contact", (req, res) => {
+    MongoClient.connect(url, (err, db) => {
+        if (err) throw err;
 
-    const name = req.body.name;
-    const email = req.body.email;
-    const password = req.body.password
+            const dbo = db.db("UserDetails");
+            dbo.collection("userDetailCollection").find({}).toArray((error,result)=>{
+            if(error){
+                res.send("Error" , error)
+            }else{
+                res.send(JSON.stringify(result));
+            }            
+            db.close();
+            });
+    
+        })
+    });
 
-    //console.log(name, email, password);
-    const myObj = { name: name, email: email, password: password };
-
-    MongoClient.connect(url , (err , db)=>{
-        if(err) throw err;
-
-        const dbo = db.db("UserDetails");
-        dbo.collection("userDetailCollection").find({}).toArray((error,result)=>{
-        if(error){
-            res.send("Error" , error)
-        }else{
-            res.send(JSON.stringify(result));
-        }            
-        db.close();
-        });
-
-    })
-});
 
 app.post('/api/userSignUp', (req, res) => {
     const name = req.body.name;
@@ -62,6 +55,55 @@ app.post('/api/userSignUp', (req, res) => {
             res.send(JSON.stringify(result));
             db.close();
         });
+    })
+});
+
+app.post('/contact', (req, res) => {
+    const full_name = req.body.full_name;
+    const email = req.body.email;
+    const message = req.body.message;
+    console.log("contact post api callled")
+    console.log(full_name, email, message);
+    const myObj = { full_name: full_name, email: email, message: message };
+
+    MongoClient.connect(url, (err, db) => {
+        if (err) throw err;
+
+        const dbo = db.db("UserDetails");
+        dbo.collection("userDetailCollection").insertOne(myObj, (error, result) => {
+            if (error) {
+                res.send("Error", error);
+                return;
+            }
+            res.send(JSON.stringify(result));
+            console.log(result)
+            db.close();
+        });
+    });
+});
+
+app.get("/api/userSignUp", (req, res) => {
+
+    const name = req.body.name;
+    const email = req.body.email;
+    const password = req.body.password
+
+    //console.log(name, email, password);
+    const myObj = { name: name, email: email, password: password };
+
+    MongoClient.connect(url , (err , db)=>{
+        if(err) throw err;
+
+        const dbo = db.db("UserDetails");
+        dbo.collection("userDetailCollection").find({}).toArray((error,result)=>{
+        if(error){
+            res.send("Error" , error)
+        }else{
+            res.send(JSON.stringify(result));
+        }            
+        db.close();
+        });
+
     })
 });
 
