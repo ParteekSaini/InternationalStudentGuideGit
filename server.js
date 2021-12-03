@@ -58,6 +58,49 @@ app.post('/api/userSignUp', (req, res) => {
     })
 });
 
+app.get("/api/postAd", (req, res) => {
+    MongoClient.connect(url, (err, db) => {
+        if (err) throw err;
+
+            const dbo = db.db("UserDetails");
+            dbo.collection("SocialHubCollection").find({}).toArray((error,result)=>{
+            if(error){
+                res.send("Error" , error)
+            }else{
+                res.send(JSON.stringify(result));
+            }            
+            db.close();
+            });
+    
+        })
+    });
+
+app.post('/api/postAd', (req, res) => {
+    const title = req.body.title;
+    const subtitle = req.body.subtitle;
+    const description = req.body.description
+    const email = req.body.email
+    const phone = req.body.phone
+
+    console.log(title, subtitle, description,email,phone);
+    const myObj = { title: title, subtitle: subtitle, description: description, email:email,phone:phone};
+    console.log(myObj.name);
+
+    MongoClient.connect(url, (err, db) => {
+        if (err) throw err;
+
+        const dbo = db.db("UserDetails");
+        dbo.collection("SocialHubCollection").insertOne(myObj, (error, result) => {
+            if (error) {
+                res.send("Error", error);
+                return;
+            }
+            res.send(JSON.stringify(result));
+            db.close();
+        });
+    })
+});
+
 app.post('/contact', (req, res) => {
     const full_name = req.body.full_name;
     const email = req.body.email;
