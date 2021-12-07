@@ -117,7 +117,7 @@ class HomePage extends Component {
             {/* <p>Do you know, <a href="">Know more..</a></p> */}
           </div>
           <form className="containerForm"/* action="signup.php" */ >
-            <div className="container">
+            <div className="containerHomePage">
               <h1>Sign Up</h1>
               <p>Sign Up for Free and let us help you!</p>
               {/* <hr> */}

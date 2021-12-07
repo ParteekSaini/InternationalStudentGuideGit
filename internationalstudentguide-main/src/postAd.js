@@ -161,8 +161,6 @@ class PostAd extends Component {
               
               {/* <p>Forgot Password? <a href="./" >Click Here!</a></p> */}
               {/* <p>Don't have an account? <a href="./" >Sign Up Here!</a></p> */}
-            
-            
           </Form>
     );
 }

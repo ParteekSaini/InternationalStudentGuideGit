@@ -14,7 +14,8 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const url = "mongodb://localhost:27017";
+// const url = "mongodb://localhost:27017";
+const url = "mongodb+srv://parteek:parteek@cluster0.yo1pv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
 app.get("/contact", (req, res) => {
     MongoClient.connect(url, (err, db) => {
