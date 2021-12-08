@@ -3,6 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
 const ObjectId = require('mongodb').ObjectID;
+const sendGrid= require('@sendgrid/mail');
 
 const app = express();
 // app.use(cors());
@@ -14,10 +15,19 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// const url = "mongodb://localhost:27017";
-const url = "mongodb+srv://parteek:parteek@cluster0.yo1pv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+app.use((req,res,next) =>{
+    res.setHeader('Access-Control-Allow-Origin','*');
+    res.setHeader('Access-Control-Allow-Methods','GET,POST,PUT,PATCH,DELETE');
+    res.setHeader('Access-Control-Allow-Headers','Content-Type, Authorization');
+    next();
+})
 
-app.get("/contact", (req, res) => {
+// const url = "mongodb://localhost:27017";
+const url = "mongodb+srv://shubam:Shubamkalra@cluster0.8bvhf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+
+app.get("/contact", (req, res,next) => {
+    res.send('API status:aa');
+
     MongoClient.connect(url, (err, db) => {
         if (err) throw err;
 
@@ -33,6 +43,23 @@ app.get("/contact", (req, res) => {
     
         })
     });
+
+app.post('/contact',(req,res,next)=>{
+    sendGrid.setApiKey('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');
+    const msg = {
+    to: 'shubamkalra.007@gmail.com', // Change to your recipient
+    from: req.body.email, // Change to your verified sender
+    subject: 'Website contact',
+    text: req.body.message,
+    }
+    sendGrid.send(msg)
+    .then((result) => {
+        console.log('Email sent')
+    })
+    .catch((error) => {
+        console.error(error)
+    })
+})
 
 
 app.post('/api/userSignUp', (req, res) => {
@@ -102,29 +129,29 @@ app.post('/api/postAd', (req, res) => {
     })
 });
 
-app.post('/contact', (req, res) => {
-    const full_name = req.body.full_name;
-    const email = req.body.email;
-    const message = req.body.message;
-    console.log("contact post api callled")
-    console.log(full_name, email, message);
-    const myObj = { full_name: full_name, email: email, message: message };
+// app.post('/contact', (req, res) => {
+//     const full_name = req.body.full_name;
+//     const email = req.body.email;
+//     const message = req.body.message;
+//     console.log("contact post api callled")
+//     console.log(full_name, email, message);
+//     const myObj = { full_name: full_name, email: email, message: message };
 
-    MongoClient.connect(url, (err, db) => {
-        if (err) throw err;
+//     MongoClient.connect(url, (err, db) => {
+//         if (err) throw err;
 
-        const dbo = db.db("UserDetails");
-        dbo.collection("userDetailCollection").insertOne(myObj, (error, result) => {
-            if (error) {
-                res.send("Error", error);
-                return;
-            }
-            res.send(JSON.stringify(result));
-            console.log(result)
-            db.close();
-        });
-    });
-});
+//         const dbo = db.db("UserDetails");
+//         dbo.collection("userDetailCollection").insertOne(myObj, (error, result) => {
+//             if (error) {
+//                 res.send("Error", error);
+//                 return;
+//             }
+//             res.send(JSON.stringify(result));
+//             console.log(result)
+//             db.close();
+//         });
+//     });
+// });
 
 app.get("/api/userSignUp", (req, res) => {
 

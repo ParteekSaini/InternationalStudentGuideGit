@@ -119,9 +119,9 @@ class Contact extends React.Component {
                             Submit
                         </Button>
 
-                        {this.state.dbSent === true && <p className="d-inline success-msg">Saved data to database</p>}
+                        {this.state.dbSent === true && <p className="d-inline success-msg">Email sent</p>}
                         
-                        {this.state.dbSent === false && <p className="d-inline err-msg">Couldn't save data to database</p>}
+                        {this.state.dbSent === false && <p className="d-inline err-msg">Couldn't send email</p>}
                     </Form>
                 </Content>
             </div>
